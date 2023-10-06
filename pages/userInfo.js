@@ -1,16 +1,10 @@
 import { useState } from "react";
 import axios from "axios";
-import {
-  BsFillInfoCircleFill,
-  BsCheckCircleFill,
-  BsCheck,
-} from "react-icons/bs";
+import { BsFillInfoCircleFill, BsCheckCircleFill } from "react-icons/bs";
 import { auth } from "../util/firebaseConfig";
 import { RecaptchaVerifier, signInWithPhoneNumber } from "firebase/auth";
-import cookie from "js-cookie";
 import { useRouter } from "next/router";
 import "firebase/database";
-import { FirebaseApp } from "firebase/app";
 
 const UserInfo = () => {
   const router = useRouter();
